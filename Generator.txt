@@ -1,0 +1,85 @@
+Generators:
+Generator Function
+Generator Object
+A generator function returns generator object.
+
+def even_integer_function(n):
+    result=[]
+    for i in range(n):
+       if i%2==0:
+          result.append(i)
+    return result
+
+def even_integer_generator(n):
+    for i in range(n):
+      if i%2==0:
+          yield i
+
+list(even_integer_generator(10))
+
+numbers=[7,22,4.5,99.7,'3','5']
+integers=(int(n) for n in numbers)
+
+names_list=['Adam','Anne','Barry','Briane','Charlie']
+up=[name.upper() for name in names_list]
+
+names_list=['Adam','Anne','Barry','Charlie']
+reverse_up=(name[::-1] for name in (name.upper() for name in names_list))
+
+
+Using generator objects:
+------------------------
+
+def even_integers_generator(n):
+    for i in range(n):
+     if i%2==0:
+       yield i
+
+in=even_integer_generator(10)
+in.next()
+in.next()
+in.next()
+
+for n in in:
+   print(n)
+
+for n in even_integer_generator(10):
+    print(n)
+for n in (i for i in range(10)):
+     print(n)
+
+The exception raised by the generator is StopIteration exception.
+
+Fibonacci Sequence Generator:
+
+def fibonacci_gen():
+  trailing,lead=0,1
+  while True:
+    yield lead
+  trailing,lead=lead,trailing+lead
+
+def separate_names(names):
+  for full_name in names:
+     for name in full_name.split(' '):
+              yield name
+
+full_names=(name.strip() for name in open('names.txt'))
+names=separate_names(full_names)
+length=((name,len(name)) for name in full_names)
+longest=max(length,key=lambda x:x[1])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
