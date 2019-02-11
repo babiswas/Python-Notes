@@ -1,0 +1,89 @@
+Python Iterators:
+
+1.__iter__
+2.__next__
+
+1.__iter__ and __next__ methods.
+2.An iterator object must implement __iter__ and __next__ method.
+
+l=[1,2,3,4]
+m=iter(l)
+print(next(m))
+print(next(m))
+
+iter_obj=iter(iterable)
+while True:
+  try:
+    element=next(iter_obj)
+  except StopIteration:
+    break
+
+class Powtwo:
+  def __init__(self,max=0):
+    self.max=max
+  def __iter__(self):
+    self.n=0
+    return self
+  def __next__(self):
+     if self.n<=self.max:
+       result=2*self.n
+       self.n+=1
+       return result
+     else:
+       raise StopIteration
+
+for i in Powtwo(5):
+   print(i)
+
+Python Infinite Iterators:
+
+class InfIter:
+   def __iter__(self):
+      self.num=1
+      return self
+   def __next__(self):
+      num=self.num
+      self.num+=2
+      return num
+a=iter(InFIter())
+print(next(a))
+print(next(a))
+print(next(a))
+print(next(a))
+
+Iterator StopIteration.
+
+Iterator in python is an object which can be iterated upon.
+__iter__()
+__next__() function implement.
+
+iter()
+next()
+
+#Implementing for loop using Iterator
+
+l=[1,2,3,4]
+e=iter(l)
+while True:
+ try:
+   m=next(e)
+   print(m)
+ except StopIteration:
+   break
+
+__iter__() method returns self.
+__next__() method raise StopIteration.
+
+
+Python Generators:
+------------------
+
+
+
+
+
+
+ 
+
+
+
