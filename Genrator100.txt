@@ -1,0 +1,63 @@
+Generator in python:
+--------------------
+Iterators can be implemented using generators.
+__iter__()
+__next__()
+StopIteration exception.
+
+Generator is a function which returns an iterator.
+instead of return yield is used to implement generator.
+
+return/yield.
+
+How is return different from yield?
+return terminates the function 
+yield suspend the function.
+
+def my_gen():
+   n=1
+   print("This is printed first")
+   yield n
+   n+=1
+   print("This is printed second")
+   yield n
+   n+=1
+   print("This is printed last")
+   yield n
+
+a=my_gen()
+
+fro i in my_gen():
+  print(i)
+
+Reverse a string using a generator:
+
+def rev_str(my_str):
+  for i in range(len(my_str)-1,-1,-1):
+     yield mystr[i]
+
+fro char in rev_str("hello")
+   print(char)
+
+Generator function produces one item at a time.
+m=[1,3,6,10]
+l=[i**2 for i in m]
+
+Because of lazy evaluation generators are more memory efficient.
+Generators are used to implement iterator easily.
+
+def PowTwoGen(max=0):
+  n=0
+  while n<max:
+      yield 2**n
+      n+=1
+
+1.Easy to implement iterator using generator.
+2.Generators are memory efficient.
+3.Infinite stream can be created using generator.
+
+Generator Pipeline:
+------------------
+
+
+
