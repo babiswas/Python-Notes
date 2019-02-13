@@ -1,0 +1,8 @@
+import re
+with open("test.txt",'r') as file:
+   m=file.read()
+   k=re.findall(r'\d+',m)
+   sum=0
+   for i in k:
+       sum+=int(i)
+   print(sum)
