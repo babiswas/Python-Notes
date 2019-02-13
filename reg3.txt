@@ -1,0 +1,8 @@
+import re
+
+def find_str(str):
+   for i in re.finditer("inform",str):
+      print(i.span())
+
+find_str("We need to inform him with the latest information")
+
