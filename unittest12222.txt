@@ -1,0 +1,14 @@
+import unittest
+import os
+import sys
+sys.path.insert(0,os.path.dirname(os.path.abspath(__file__)))
+from Calculator import Calculator
+
+print("Hello")
+
+class TestCalc(unittest.TestCase):
+         
+      def testAdd(self):
+          calculator=Calculator(2,3)
+          result=calculator.add()
+          self.assertEqual(result,5,"Addition Failed")
