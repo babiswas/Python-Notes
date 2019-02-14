@@ -1,0 +1,162 @@
+Unit testing using pytest:
+pip install pytest
+
+pytest files start with test_ or _test.py
+
+https://semaphoreci.com/community/tutorials/testing-python-applications-with-pytest
+
+test_capitalize.py
+
+def capital_case(x):
+  return x.capitalize()
+
+def test_capital_case():
+  assert capital_case('semaphore')=='Semaphore'
+
+pytest test_capitalize.py
+
+This is the command to execute pytest.
+
+test_capitalize.py
+
+import pytest
+
+def test_capital_case():
+  assert capital_case('semaphore')=='Semaphore'
+
+def test_raises_exception_on_non_string_arguments():
+  with pytest.raises(TypeError):
+     capital_case(0)
+
+def capital_case(x):
+   if not isinstance(x,str):
+      raise TypeError('Please provide a string argument')
+   return x.capitalize()
+
+Using pytest Fixtures:
+
+-------------------------------------------------------------------------------------------------------------------------
+wallet.py
+
+class InSufficientAmount(Exception):
+   pass
+
+class Wallet(object):
+  def __init__(self,initial_amount=0):
+     self.balance=initial_amount
+  def spend_cash(self,amount):
+     if self.balance<amount:
+         raise InSufficientAmount('Not enough available to spend {}'.format(amount))
+     self.balance-=amount
+  def add_cash(self,amount):
+    self.balance+=amount
+
+import pytest
+
+from wallet import wallet,InSufficientAmount
+
+def test_default_initial_amount():
+   wallet=Wallet()
+   assert wallet.balance==0
+
+def test_setting_initial_amount():
+   wallet=Wallet(100)
+   assert wallet.balance=100
+
+def test_wallet_add_cash():
+   wallet=Wallet(10)
+   wallet.add_cash(90)
+   assert wallet.balance==100
+
+def test_wallet_spend_cash():
+   wallet=Wallet(20)
+   wallet.spend_cash(10)
+   assert wallet.balance==10
+
+def test_wallet_spend_cash_raises_exception_on_insufficient_amount():
+    wallet=Wallet()
+    with pytest.raises(InsufficientAmount):
+       wallet.spend_cash(100)
+
+
+
+Refactoring our Test with Fixtures:
+
+Setting up resources needed by the test using pytest fixtures.
+------------------------------------------------------------------------------------------------------------------------
+
+import pytest
+from wallet import Wallet,InSufficientAmount
+
+@pytest.fixture
+def empty_wallet():
+  return Wallet()
+
+@pytest.fixture
+def wallet()
+  return Wallet(20)
+
+def test_default_initial_amount(empty_wallet):
+  assert empty_wallet_balance==0
+
+def test_setting_initial_amount(wallet):
+  assert wallet.balance==20
+
+def test_wallet_add_cash(wallet):
+   wallet.add_cash(80)
+   assert wallet.balance==100
+
+def test_wallet_spend_cash(wallet):
+   wallet.spend_cash(10)
+   assert wallet.balance==10
+
+def test_wallet_spend_cash_raises_exception_on_sufficient_amount(empty_wallet):
+   with pytest.raises(InSufficientAmount):
+         empty_wallet.spend_cash(100)
+------------------------------------------------------------------------------------------------------------------------
+Parameterized Test Functions:
+-----------------------------
+
+test_wallet.py
+
+@pytest.mark.parametrize("earned,spent,expected",[(30,10,20),(20,2,18)])
+def test_transactions(earned,spent,expected):
+   my_wallet=Wallet()
+   my_wallet.add_cash(earned)
+   my_wallet.spend_cash(spent)
+   assert my_wallet.balance==expected
+
+Combining Test Fixtures and Parameterized Test Functions:
+
+@pytest.fixture
+def my_wallet():
+  return Wallet()
+
+@pytest.mark.parametrize("earned,spent,expected",[(30,10,20),(20,2,18),])
+
+def test_transactions(my_wallet,earned,spent,expected):
+     my_wallet.add_cash(earned)
+     my_wallet.spend_cash(spent)
+     assert my_wallet.balance==expected
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
