@@ -1,0 +1,193 @@
+Decorator in python:
+https://www.pythonforthelab.com/blog/how-to-use-decorators-part-2/
+
+def check_positive(func):
+  def func_wrapper(x,y):
+     if x<0 or y<0:
+        raise Exception("Both x and y has to be positive {}".format(func.__name__))
+     res=func(x,y)
+     return res
+  return func_wrapper
+
+@check_positive
+def average(x,y):
+  return (x+y)/2
+
+average=func_wrapper
+a=average(1,2)
+print(a)
+b=average(1,-1)
+print(b)
+
+help(func_name)
+print the docstrings
+
+
+def check_positive(func):
+  def func_wrapper(x,y):
+     if x<0 or y<0:
+       raise Exception("Both x and y should be positive function {}".format(func.__name__))
+     res=func(x,y)
+     return res
+  func_wrapper.__name__=func.__name__
+  func_wrapper.__doc__=func.__doc__
+  return func_wrapper
+
+def check_positive(func):
+  """docstrings"""
+
+
+from functools import wraps
+def check_positive(func):
+  @wraps(func)
+  def func_wrapper(x,y):
+     if x<0 or y<0:
+        raise Exception("Both x and y has to be positive function {} to work".format(func.__name__))
+     res=func(x,y)
+     return res
+  return func_wrapper
+
+
+Arguments in decorators:
+
+
+@check_above(2)
+def average(x,y):
+   return (x+y)/2
+
+def check_above(threshold):
+   def wrap(func):
+     @wraps(func)
+     def func_wrapper(x,y):
+         if x<threshold or y<threshold:
+            raise Exception("Both x and y have to be larger than {} for function {} to work".format(threshold,func.__name__))
+         res=func(x,y)
+         return res
+     return func_wrapper
+   return wrap
+
+average(1,2) this will raise Exception.
+
+from functools import wraps
+
+func_registry=[]
+
+def register(func):
+ func_registry.append(func.__name__)
+ @wraps(func)
+ def func_wrapper(*args):
+     return func(*args)
+ return func_wrapper
+
+
+@register
+def average(x,y):
+  return x+y/2
+
+@register
+def geom_average(x,y):
+  return (x*y)**0.5
+
+
+Decorators for methods in classes.
+
+class Operations:
+  @check_positive
+  def average(self,x,y):
+     return (x+y)/2
+
+
+from functools import wraps
+
+def check_positive(func):
+  @wraps(func)
+  def func_wrappers(*args):
+     for arg in args:
+        if type(arg) is int or type(arg) is float:
+            if arg<0
+              raise Exception("Exception raised")
+     return func(*args)
+  return func_wrapper
+
+
+Classes as Decorators:
+
+class Decorator:
+   def __init__(self,func):
+      print('Decorating {}'.format(func.__name__))
+      self.func=func
+
+@Decorator
+def average(x,y):
+  return x+y/2
+
+average=Decorator(average)
+average()  #Decorator doesn't have the __call__ method with it.
+
+class Decorator:
+  def __init__(self,func):
+     print("Decorating {}".format(func.__name__))
+     self.func=func
+  def __call__(self,*args,**kwargs):
+     return self.func(*args)
+
+
+Any callable can be decorator of any other callable.
+
+@Decorate
+class MyClass:
+  def __init__(self):
+     print('My class')
+
+m=Myclass()
+
+def Decorate(cls):
+  print('Decorating {}'.format(cls.__name__))
+  def class_wrapper(*args):
+     return cls(*args)
+  return class_wrapper
+
+MyClass=Decorate(MyClass)
+
+
+def Decorate(cls):
+  def class_wrapper(*args):
+     def average(cls,x,y):
+         return (x+y)/2
+     setattr(cls,'average',average)
+     return cls(*args)
+  return class_wrapper
+
+How to use Decorators to validate input?
+
+def average(x,y):
+  if x<0 and y<0:
+    raise Exception("Both x and y has to be positive")
+  avg=(x+y)/2
+  return avg
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
