@@ -1,0 +1,52 @@
+def max_prod(l):
+  if len(l)<2:
+    return None
+  elif len(l)==2:
+    return l[0]*l[1]
+  else:
+    m=sorted(l)
+    return m[-1]*m[-2]
+
+l=[1,2,8,0,3,11]
+
+print(max_prod(l)):
+
+def merge_sort(l,start,end):
+   if start<end:
+     mid=(start+end)//2
+     merge_sort(l,start,mid)
+     merge_sort(l,mid,end)
+     merge(l,start,end,mid)
+
+def merge(l,start,end,mid):
+   list1=l[start:mid]
+   list2=l[mid:end+1]
+   list1.append(99999999)
+   list2.append(99999999)
+   i=j=0
+   for k in range(start,end+1):
+      if list1[i]<=list2[j]:
+        l[k]=list1[i]
+        i=i+1
+      else:
+        l[k]=list2[j]
+        j=j+1
+
+Interchange the first and last column of a 2D array:
+
+l=[[1,2,3],[4,5,6],[7,8,9]]
+for i in l:
+  i[0],i[-1]=i[-1],i[0]
+print(l)
+
+def interchange_columns(l,index1,index2):
+    for i in l:
+      i[index1],i[index2]=i[index2],i[index1]
+
+
+
+
+
+
+
+
