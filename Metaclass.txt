@@ -1,44 +1,119 @@
-A=type('A',(object,),{})
+How Metaclasses work technically in Python2 and Python3?
 
-This is how a class is created using metaclass.
+To create a class object the metaclass of the class is called with
+1.class name.
+2.base class name.
+3.variables and attributes are stored in the dictionary.
+4.metaclass.
 
-class Exampleclass(metaclass=type):
-     pass
+class ExampleClass(metaclass=type):
+   pass
 
-interpreater:
-1.name of the class.
-2.base class of the class.
-3.metaclass of the class.
-4.variables and attributes of the class.
+This called custom metaclass.
+type is the default metaclass.
 
+A=type(Classname,Baseclassname,{})
+type returns the class object.
 
-classobj=type('Classname',(object,),{})
+Flow inside metaclass:
+1.__call__
+2.__new__
+3.__init__
 
+These are the three methods called by the metaclass.
 
-When type is called?
-1.__call__ method of type.
-2.__new__ and __init__method is called.
-
-The new method creates new object and init method initiallises it.
-
-class A:
+class a:
   def __init__(self,data):
      self.data=data
   def getd3(self):
      return self.data*3
 
-class Mymeta(type):
+class MyMeta(type):
    def __new__(metaname,classname,baseclass,attrs):
-      attrs['getdata']=A.__dict__['getd3']
+      attrs['getdata']=a.__dict__['getd3']
       return type.__new__(metaname,classname,baseclass,attrs)
-   def __init__(self,cls,baseclass,attrs):
-      pass
-class Kls(metaclass=Mymeta):
+
+   def __init__(cls,classname,baseclass,attrs):
+     pass
+
+class Kls(metaclass=MyMeta):
    def __init__(self,data):
       self.data=data
-   def printd(self):
-     print(self.data)
+   def printed(self):
+      print(self.data)
 
-ik=Kls('ass')
+ik=Kls('aaaa')
 ik.printd()
 print(ik.getdata())
+
+Here the __new__ method of the type class is overidden.
+Normally we need to override only one method __new__ or __init__
+
+
+We can also use function instead of class:
+
+def meta_func(name,bases,attrs):
+   nattrs={'mod'+key:attrs[key] for key in attrs}
+   return type(name,bases,nattrs)
+
+MyMeta=meta_func
+
+class Kls(metaclass=Mymeta):
+   def setd(self,data):
+      self.data=data
+   def getd(self):
+      return self.data
+
+k=Kls()
+k.modsetd('arun')
+print(k.modgetd())
+
+class MyMeta(type):
+  def __call__(clsname,*args):
+     instance=object.__new__(clsname)
+     instance.__init__(*args)
+     return instance
+
+class Kls(metaclass=MyMeta):
+    def __init__(self,data):
+      self.data=data
+    def printd(self):
+       print(self.data)
+
+ik=Kls('arun')
+ik.printd()
+
+
+MetaClass Real Python:
+----------------------
+New style class:
+
+class Foo:
+  pass
+
+obj=Foo()
+obj.__class__
+type(obj)
+print(obj.__class__ is type(obj))#True
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
