@@ -1,0 +1,119 @@
+Generators:
+Genarators save a lot of memory.They are memory efficient.
+
+Iterators:
+1.Iterator can maintain their state.
+2.They do lazy evaluation.
+3.Iterators doesn't store the sequence in memory.
+4.They implement __iter__ and __next__ method.
+
+Writing an iterator from scratch require developer to implement next and iter.To reduce this task we have generator.
+
+All iterator are not generator but all generator are iterator.
+
+def even_integer_function(n):
+    result=[]
+    for i in range(n):
+        if i%2==0:
+          result.append(i)
+    return result
+
+def even_integer_function(n):
+   for i in range(n):
+      if i%2==0:
+        yield i
+
+A generator function returns the generator object.
+list(even_integer_function(10))
+
+Generator Expression:
+--------------------
+newlist=[item.upper() for item in collection]
+(item.upper() for item in collection)  this is generator Expression.
+
+even_integer=(n for n in range(10) if n%2==0)
+numbers=[7,22,4.5,99.7,'3','5']
+integer=(int(n) for n in numbers)
+
+m=even_integer_function(10)
+m.__next__()
+m.__next__()
+
+
+names_list=['Adam','Anne','Barry','Xweewew']
+upper_names=(name.upper() for name in names_list)
+list(upper_names)
+
+names_list=["Adam","Anne","Barry","Brianne","Cassandra","David","Dana"]
+reverse_uppercase=(name[::-1] for name in (name.upper for name in names_list))
+upper_case=(name.upper() for name in name_list)
+reverse_uppercase=(name[::-1] for name in upper_case)
+
+
+Using Generator Objects:
+-----------------------
+def even_integer_generator(n):
+   for i in range(n):
+      if i%2==0:
+        yield i
+
+Generator raises Stopiteration exception.
+
+def fibonacci_gen():
+   trailing,lead=0,1
+   while True:
+     yield lead
+     trailing,lead=lead,trailing+lead
+------------------------------------------------------------------------------------------------------------------------------
+Building a generator pipeline:
+------------------------------
+full_names=(name.strip() for name in open('name.txt'))
+length=((name,len(name)) for name in full_names)
+longest=max(length,key=lambda x:x[1])
+
+def separate_names(names):
+   for full_name in names:
+      for name in full_name.split(''):
+          yield name
+
+full_names=(name.strip() for name in open('names.txt'))
+names=separate_names(full_names)
+lengths=((name,len(name)) for name in names)
+longest=max(lengths,key=lambda x:x[1])
+
+def get_longest(namelist):
+   full_names=(name.strip() for name in open(namelist))
+   names=separate(full_names)
+   lengths=((name,len(name)) for name in names)
+   return max(lengths,key=lambda x:x[1])
+------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

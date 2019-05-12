@@ -1,0 +1,86 @@
+Context Manager:
+------------------------------------------------------------------------------------------------------------------------------
+from contextlib import contextmanager
+
+@contextmanager
+def fun(arg):
+   try:
+     #setup code.
+     yield
+   finally:
+     #wrapup code.
+
+A contextmanager is always used with the With statement.
+
+A generator is used to implement context manager.
+A generator is used to build an iterator.
+
+-----------------------------------------------------------------------------------------------------------------------------
+from contextlib import contextmanager
+
+@contextmanager
+def context(obj):
+  try:
+     obj.someproperty+=1
+     yield
+  finally:
+     obj.someproperty-=1
+
+
+class Some_obj(object):
+   def __init__(self,arg):
+      self.some_property=arg
+
+obj=Some_obj(5)
+obj.some_property
+
+with simple_context_manager(obj):
+   print(obj.some_property)
+print(obj.some_property)
+------------------------------------------------------------------------------------------------------------------------------
+Generator is used to implement iterator.
+Generator is used to implement contextmanager.
+
+from time import time
+from contextlib import contextmanager
+
+HEADER="this is HEADER\n"
+FOOTER="\nthis is FOOTER\n"
+
+
+@contextmanager
+def new_log_file(name):
+   try:
+     logname=name
+     f=open(logname,'w')
+     f.write(HEADER)
+     yield f
+   finally:
+     f.write(FOOTER)
+     print("Log file created")
+     f.close()
+
+with new_log_file("logfile") as file:
+      file.write('this is the body')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
