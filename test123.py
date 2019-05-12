@@ -3,7 +3,7 @@ class B:
      self.c=b
   def cube(self):
      print("cube method of the B class executed")
-     return self.b**3
+     return self.b*3
 
 class Mymeta(type):
    def __new__(metaclass,classname,baseclass,attrs):
@@ -19,7 +19,7 @@ class A(metaclass=Mymeta):
       self.a=a
       self.b=b
 
-a=A(2,3)
+a=A(2,"Hello")
 print(a.get_cube())
 
 
