@@ -1,0 +1,129 @@
+{
+    "links": {
+        "self": "https://captivateprimestage1.adobe.com/primeapi/v1/learner-transcripts?page[offset]=0&page[limit]=100&lo_type=Course",
+        "next": "https://captivateprimestage1.adobe.com/primeapi/v1/learner-transcripts?page[offset]=100&page[limit]=100&lo_type=Course"
+    },
+    "data": {
+        "userDetails": {
+            "5641014": {
+                "name": "Bvc Cvp",
+                "email": "bvc@cvp.com",
+                "userUniqueId": "",
+                "adobeId": "bvc@cvp.com",
+                "attributes": {
+                    "userState": "ACTIVE",
+                    "profile": "admin",
+                    "managerId": ""
+                }
+            }
+        },
+        "userCourseDetails": {
+            "5641014": {
+                "1991675": {
+                    "learningPlanName": "",
+                    "dateEnrolled": "2019-05-29T12:06:09.000Z",
+                    "dateStarted": "2019-05-29T12:09:51.000Z",
+                    "dateCompleted": null,
+                    "deadline": null,
+                    "overdue": "",
+                    "selectionCriteria": "direct",
+                    "instance": "Default instance",
+                    "status": "In Progress",
+                    "progress": 0,
+                    "grade": "",
+                    "scoreRaw": 20,
+                    "highestScoreRaw": 20,
+                    "scoreMax": 40,
+                    "timeSpent": null
+                },
+                "1991678": {
+                    "learningPlanName": "",
+                    "dateEnrolled": "2019-05-29T12:15:05.000Z",
+                    "dateStarted": "2019-05-29T12:15:26.000Z",
+                    "dateCompleted": "2019-05-29T12:15:54.000Z",
+                    "deadline": null,
+                    "overdue": "",
+                    "selectionCriteria": "self",
+                    "instance": "Default instance",
+                    "status": "Completed",
+                    "progress": 100,
+                    "grade": "Pass",
+                    "scoreRaw": 40,
+                    "highestScoreRaw": 40,
+                    "scoreMax": 40,
+                    "timeSpent": null
+                }
+            }
+        },
+        "userCourseModuleDetails": {
+            "5641014": {
+                "1991675": {
+                    "2625592": {
+                        "version": "",
+                        "deliveryType": "ELEARNING",
+                        "language": null,
+                        "comment": null,
+                        "dateStarted": "2019-05-29T12:09:51.000Z",
+                        "dateCompleted": null,
+                        "selectionCriteria": "direct",
+                        "status": "In Progress",
+                        "progress": 50,
+                        "grade": "",
+                        "scoreRaw": 20,
+                        "highestScoreRaw": 20,
+                        "scoreMax": 40,
+                        "timeSpent": 0,
+                        "attempts": "1",
+                        "maxAttempts": "4"
+                    }
+                },
+                "1991678": {
+                    "2625595": {
+                        "version": "1",
+                        "deliveryType": "ELEARNING",
+                        "language": "en_US",
+                        "comment": null,
+                        "dateStarted": "2019-05-29T12:15:26.000Z",
+                        "dateCompleted": "2019-05-29T12:15:54.000Z",
+                        "selectionCriteria": "self",
+                        "status": "Completed",
+                        "progress": 100,
+                        "grade": "Pass",
+                        "scoreRaw": 40,
+                        "highestScoreRaw": 40,
+                        "scoreMax": 40,
+                        "timeSpent": 0,
+                        "attempts": "1",
+                        "maxAttempts": "Infinite"
+                    }
+                }
+            }
+        },
+        "courseModuleDetails": {
+            "1991675": [
+                2625592
+            ],
+            "1991678": [
+                2625595
+            ]
+        },
+        "moduleDetails": {
+            "2625592": {
+                "name": "tes"
+            },
+            "2625595": {
+                "name": "tes"
+            }
+        },
+        "courseDetails": {
+            "1991675": {
+                "name": "BES",
+                "loUniqueId": null
+            },
+            "1991678": {
+                "name": "HGES",
+                "loUniqueId": null
+            }
+        }
+    }
+}

@@ -1,0 +1,626 @@
+{
+    "links": {
+        "self": "https://captivateprimeqe.adobe.com/primeapi/v2/learningObjects?page[limit]=10&filter.loTypes=course&sort=name&filter.learnerState=notenrolled&filter.skillName=ST_1",
+        "next": "https://captivateprimeqe.adobe.com/primeapi/v2/learningObjects?page[limit]=10&filter.loTypes=course&sort=name&filter.learnerState=notenrolled&filter.skillName=ST_1&page[cursor]=nc_aa9948a1-2134-4f16-a4a2-1f0cd3650c89;10"
+    },
+    "data": [
+        {
+            "id": "course:1127039",
+            "type": "learningObject",
+            "attributes": {
+                "authorNames": [
+                    "New Terr"
+                ],
+                "dateCreated": "2019-06-03T13:45:03.000Z",
+                "datePublished": "2019-06-03T13:45:13.000Z",
+                "dateUpdated": "2019-06-03T13:45:13.000Z",
+                "duration": 300,
+                "effectiveModifiedDate": "2019-06-03T13:45:13.000Z",
+                "effectivenessIndex": 0,
+                "enrollmentType": "Self Enroll",
+                "hasOptionalLoResources": false,
+                "isExternal": false,
+                "isPrerequisiteEnforced": false,
+                "isSubLoOrderEnforced": false,
+                "loType": "course",
+                "moduleResetEnabled": false,
+                "state": "Published",
+                "localizedMetadata": [
+                    {
+                        "description": "",
+                        "locale": "en-US",
+                        "name": " STA_1_12",
+                        "overview": ""
+                    }
+                ]
+            },
+            "relationships": {
+                "authors": {
+                    "data": [
+                        {
+                            "id": "7860339",
+                            "type": "user"
+                        }
+                    ]
+                },
+                "instances": {
+                    "data": [
+                        {
+                            "id": "course:1127039_1352143",
+                            "type": "learningObjectInstance"
+                        },
+                        {
+                            "id": "course:1127039_1351928",
+                            "type": "learningObjectInstance"
+                        }
+                    ]
+                },
+                "skills": {
+                    "data": [
+                        {
+                            "id": "course:1127039_21868",
+                            "type": "learningObjectSkill"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "course:1127029",
+            "type": "learningObject",
+            "attributes": {
+                "authorNames": [
+                    "New Terr"
+                ],
+                "dateCreated": "2019-06-03T13:42:18.000Z",
+                "datePublished": "2019-06-03T13:42:33.000Z",
+                "dateUpdated": "2019-06-03T13:42:33.000Z",
+                "duration": 300,
+                "effectiveModifiedDate": "2019-06-03T13:42:33.000Z",
+                "effectivenessIndex": 0,
+                "enrollmentType": "Self Enroll",
+                "hasOptionalLoResources": false,
+                "isExternal": false,
+                "isPrerequisiteEnforced": false,
+                "isSubLoOrderEnforced": false,
+                "loType": "course",
+                "moduleResetEnabled": false,
+                "state": "Published",
+                "localizedMetadata": [
+                    {
+                        "description": "",
+                        "locale": "en-US",
+                        "name": " STA_1_2",
+                        "overview": ""
+                    }
+                ]
+            },
+            "relationships": {
+                "authors": {
+                    "data": [
+                        {
+                            "id": "7860339",
+                            "type": "user"
+                        }
+                    ]
+                },
+                "instances": {
+                    "data": [
+                        {
+                            "id": "course:1127029_1352132",
+                            "type": "learningObjectInstance"
+                        },
+                        {
+                            "id": "course:1127029_1351918",
+                            "type": "learningObjectInstance"
+                        }
+                    ]
+                },
+                "skills": {
+                    "data": [
+                        {
+                            "id": "course:1127029_21868",
+                            "type": "learningObjectSkill"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "course:1127031",
+            "type": "learningObject",
+            "attributes": {
+                "authorNames": [
+                    "New Terr"
+                ],
+                "dateCreated": "2019-06-03T13:42:56.000Z",
+                "datePublished": "2019-06-03T13:43:06.000Z",
+                "dateUpdated": "2019-06-03T13:43:06.000Z",
+                "duration": 300,
+                "effectiveModifiedDate": "2019-06-03T13:43:06.000Z",
+                "effectivenessIndex": 0,
+                "enrollmentType": "Self Enroll",
+                "hasOptionalLoResources": false,
+                "isExternal": false,
+                "isPrerequisiteEnforced": false,
+                "isSubLoOrderEnforced": false,
+                "loType": "course",
+                "moduleResetEnabled": false,
+                "state": "Published",
+                "localizedMetadata": [
+                    {
+                        "description": "",
+                        "locale": "en-US",
+                        "name": " STA_1_4",
+                        "overview": ""
+                    }
+                ]
+            },
+            "relationships": {
+                "authors": {
+                    "data": [
+                        {
+                            "id": "7860339",
+                            "type": "user"
+                        }
+                    ]
+                },
+                "instances": {
+                    "data": [
+                        {
+                            "id": "course:1127031_1351920",
+                            "type": "learningObjectInstance"
+                        },
+                        {
+                            "id": "course:1127031_1352134",
+                            "type": "learningObjectInstance"
+                        }
+                    ]
+                },
+                "skills": {
+                    "data": [
+                        {
+                            "id": "course:1127031_21868",
+                            "type": "learningObjectSkill"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "course:1127041",
+            "type": "learningObject",
+            "attributes": {
+                "authorNames": [
+                    "New Terr"
+                ],
+                "dateCreated": "2019-06-03T13:46:32.000Z",
+                "datePublished": "2019-06-03T13:46:43.000Z",
+                "dateUpdated": "2019-06-03T13:46:43.000Z",
+                "duration": 300,
+                "effectiveModifiedDate": "2019-06-03T13:46:43.000Z",
+                "effectivenessIndex": 0,
+                "enrollmentType": "Self Enroll",
+                "hasOptionalLoResources": false,
+                "isExternal": false,
+                "isPrerequisiteEnforced": false,
+                "isSubLoOrderEnforced": false,
+                "loType": "course",
+                "moduleResetEnabled": false,
+                "state": "Published",
+                "localizedMetadata": [
+                    {
+                        "description": "",
+                        "locale": "en-US",
+                        "name": " STA_2_1",
+                        "overview": ""
+                    }
+                ]
+            },
+            "relationships": {
+                "authors": {
+                    "data": [
+                        {
+                            "id": "7860339",
+                            "type": "user"
+                        }
+                    ]
+                },
+                "instances": {
+                    "data": [
+                        {
+                            "id": "course:1127041_1351930",
+                            "type": "learningObjectInstance"
+                        },
+                        {
+                            "id": "course:1127041_1352145",
+                            "type": "learningObjectInstance"
+                        }
+                    ]
+                },
+                "skills": {
+                    "data": [
+                        {
+                            "id": "course:1127041_21868",
+                            "type": "learningObjectSkill"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "course:1127057",
+            "type": "learningObject",
+            "attributes": {
+                "authorNames": [
+                    "New Terr"
+                ],
+                "dateCreated": "2019-06-03T13:53:16.000Z",
+                "datePublished": "2019-06-03T13:53:26.000Z",
+                "dateUpdated": "2019-06-03T13:53:26.000Z",
+                "duration": 300,
+                "effectiveModifiedDate": "2019-06-03T13:53:26.000Z",
+                "effectivenessIndex": 0,
+                "enrollmentType": "Self Enroll",
+                "hasOptionalLoResources": false,
+                "isExternal": false,
+                "isPrerequisiteEnforced": false,
+                "isSubLoOrderEnforced": false,
+                "loType": "course",
+                "moduleResetEnabled": false,
+                "state": "Published",
+                "localizedMetadata": [
+                    {
+                        "description": "",
+                        "locale": "en-US",
+                        "name": " STA_3_4",
+                        "overview": ""
+                    }
+                ]
+            },
+            "relationships": {
+                "authors": {
+                    "data": [
+                        {
+                            "id": "7860339",
+                            "type": "user"
+                        }
+                    ]
+                },
+                "instances": {
+                    "data": [
+                        {
+                            "id": "course:1127057_1351946",
+                            "type": "learningObjectInstance"
+                        },
+                        {
+                            "id": "course:1127057_1352164",
+                            "type": "learningObjectInstance"
+                        }
+                    ]
+                },
+                "skills": {
+                    "data": [
+                        {
+                            "id": "course:1127057_21868",
+                            "type": "learningObjectSkill"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "course:1127060",
+            "type": "learningObject",
+            "attributes": {
+                "authorNames": [
+                    "New Terr"
+                ],
+                "dateCreated": "2019-06-03T13:54:11.000Z",
+                "datePublished": "2019-06-03T13:54:21.000Z",
+                "dateUpdated": "2019-06-03T13:54:21.000Z",
+                "duration": 300,
+                "effectiveModifiedDate": "2019-06-03T13:54:21.000Z",
+                "effectivenessIndex": 0,
+                "enrollmentType": "Self Enroll",
+                "hasOptionalLoResources": false,
+                "isExternal": false,
+                "isPrerequisiteEnforced": false,
+                "isSubLoOrderEnforced": false,
+                "loType": "course",
+                "moduleResetEnabled": false,
+                "state": "Published",
+                "localizedMetadata": [
+                    {
+                        "description": "",
+                        "locale": "en-US",
+                        "name": " STA_3_7",
+                        "overview": ""
+                    }
+                ]
+            },
+            "relationships": {
+                "authors": {
+                    "data": [
+                        {
+                            "id": "7860339",
+                            "type": "user"
+                        }
+                    ]
+                },
+                "instances": {
+                    "data": [
+                        {
+                            "id": "course:1127060_1352167",
+                            "type": "learningObjectInstance"
+                        },
+                        {
+                            "id": "course:1127060_1351949",
+                            "type": "learningObjectInstance"
+                        }
+                    ]
+                },
+                "skills": {
+                    "data": [
+                        {
+                            "id": "course:1127060_21868",
+                            "type": "learningObjectSkill"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "course:1127196",
+            "type": "learningObject",
+            "attributes": {
+                "authorNames": [
+                    "New Terr"
+                ],
+                "dateCreated": "2019-06-04T06:55:09.000Z",
+                "datePublished": "2019-06-04T06:55:24.000Z",
+                "dateUpdated": "2019-06-04T06:55:24.000Z",
+                "duration": 300,
+                "effectiveModifiedDate": "2019-06-04T06:55:24.000Z",
+                "effectivenessIndex": 0,
+                "enrollmentType": "Self Enroll",
+                "hasOptionalLoResources": false,
+                "isExternal": false,
+                "isPrerequisiteEnforced": false,
+                "isSubLoOrderEnforced": false,
+                "loType": "course",
+                "moduleResetEnabled": false,
+                "state": "Published",
+                "tags": [
+                    "TAG_71",
+                    "TAG_7",
+                    "TAG_72",
+                    "TAG_75",
+                    "TAG_73",
+                    "TAG_76",
+                    "TAG_74",
+                    "TAG_78",
+                    "TAG_79",
+                    "TAG_77"
+                ],
+                "localizedMetadata": [
+                    {
+                        "description": "des",
+                        "locale": "en-US",
+                        "name": " TAG_71",
+                        "overview": "des"
+                    }
+                ]
+            },
+            "relationships": {
+                "authors": {
+                    "data": [
+                        {
+                            "id": "7860339",
+                            "type": "user"
+                        }
+                    ]
+                },
+                "instances": {
+                    "data": [
+                        {
+                            "id": "course:1127196_1352090",
+                            "type": "learningObjectInstance"
+                        }
+                    ]
+                },
+                "skills": {
+                    "data": [
+                        {
+                            "id": "course:1127196_21868",
+                            "type": "learningObjectSkill"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "course:1127204",
+            "type": "learningObject",
+            "attributes": {
+                "authorNames": [
+                    "New Terr"
+                ],
+                "dateCreated": "2019-06-04T06:57:53.000Z",
+                "datePublished": "2019-06-04T06:58:03.000Z",
+                "dateUpdated": "2019-06-04T06:58:03.000Z",
+                "duration": 300,
+                "effectiveModifiedDate": "2019-06-04T06:58:03.000Z",
+                "effectivenessIndex": 0,
+                "enrollmentType": "Self Enroll",
+                "hasOptionalLoResources": false,
+                "isExternal": false,
+                "isPrerequisiteEnforced": false,
+                "isSubLoOrderEnforced": false,
+                "loType": "course",
+                "moduleResetEnabled": false,
+                "state": "Published",
+                "tags": [
+                    "TAG_71",
+                    "TAG_7",
+                    "TAG_72",
+                    "TAG_75",
+                    "TAG_73",
+                    "TAG_76",
+                    "TAG_74",
+                    "TAG_78",
+                    "TAG_79",
+                    "TAG_77"
+                ],
+                "localizedMetadata": [
+                    {
+                        "description": "des",
+                        "locale": "en-US",
+                        "name": " TAG_79",
+                        "overview": "des"
+                    }
+                ]
+            },
+            "relationships": {
+                "authors": {
+                    "data": [
+                        {
+                            "id": "7860339",
+                            "type": "user"
+                        }
+                    ]
+                },
+                "instances": {
+                    "data": [
+                        {
+                            "id": "course:1127204_1352098",
+                            "type": "learningObjectInstance"
+                        }
+                    ]
+                },
+                "skills": {
+                    "data": [
+                        {
+                            "id": "course:1127204_21868",
+                            "type": "learningObjectSkill"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "course:1127221",
+            "type": "learningObject",
+            "attributes": {
+                "authorNames": [
+                    "New Terr"
+                ],
+                "dateCreated": "2019-06-04T07:05:53.000Z",
+                "datePublished": "2019-06-04T07:06:05.000Z",
+                "dateUpdated": "2019-06-04T07:06:05.000Z",
+                "duration": 300,
+                "effectiveModifiedDate": "2019-06-04T07:06:05.000Z",
+                "effectivenessIndex": 0,
+                "enrollmentType": "Self Enroll",
+                "hasOptionalLoResources": false,
+                "isExternal": false,
+                "isPrerequisiteEnforced": false,
+                "isSubLoOrderEnforced": false,
+                "loType": "course",
+                "moduleResetEnabled": false,
+                "state": "Published",
+                "localizedMetadata": [
+                    {
+                        "description": "des",
+                        "locale": "en-US",
+                        "name": " TAG_92",
+                        "overview": "des"
+                    }
+                ]
+            },
+            "relationships": {
+                "authors": {
+                    "data": [
+                        {
+                            "id": "7860339",
+                            "type": "user"
+                        }
+                    ]
+                },
+                "instances": {
+                    "data": [
+                        {
+                            "id": "course:1127221_1352117",
+                            "type": "learningObjectInstance"
+                        }
+                    ]
+                },
+                "skills": {
+                    "data": [
+                        {
+                            "id": "course:1127221_21868",
+                            "type": "learningObjectSkill"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "course:1127222",
+            "type": "learningObject",
+            "attributes": {
+                "authorNames": [
+                    "New Terr"
+                ],
+                "dateCreated": "2019-06-04T07:06:11.000Z",
+                "datePublished": "2019-06-04T07:06:19.000Z",
+                "dateUpdated": "2019-06-04T07:06:19.000Z",
+                "duration": 300,
+                "effectiveModifiedDate": "2019-06-04T07:06:19.000Z",
+                "effectivenessIndex": 0,
+                "enrollmentType": "Self Enroll",
+                "hasOptionalLoResources": false,
+                "isExternal": false,
+                "isPrerequisiteEnforced": false,
+                "isSubLoOrderEnforced": false,
+                "loType": "course",
+                "moduleResetEnabled": false,
+                "state": "Published",
+                "localizedMetadata": [
+                    {
+                        "description": "des",
+                        "locale": "en-US",
+                        "name": " TAG_93",
+                        "overview": "des"
+                    }
+                ]
+            },
+            "relationships": {
+                "authors": {
+                    "data": [
+                        {
+                            "id": "7860339",
+                            "type": "user"
+                        }
+                    ]
+                },
+                "instances": {
+                    "data": [
+                        {
+                            "id": "course:1127222_1352118",
+                            "type": "learningObjectInstance"
+                        }
+                    ]
+                },
+                "skills": {
+                    "data": [
+                        {
+                            "id": "course:1127222_21868",
+                            "type": "learningObjectSkill"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
