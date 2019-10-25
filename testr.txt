@@ -1,0 +1,378 @@
+{
+    "links": {
+        "self": "https://captivateprimestage1.adobe.com/primeapi/v2/learningObjects?include=instances.loResources.resources&ids=course:2010047&filter.loTypes=course&sort=name"
+    },
+    "data": [
+        {
+            "id": "course:2010047",
+            "type": "learningObject",
+            "attributes": {
+                "authorNames": [
+                    "BESSS DESSS",
+                    "ngggg"
+                ],
+                "dateCreated": "2019-10-17T06:34:33.000Z",
+                "datePublished": "2019-10-17T06:34:58.000Z",
+                "dateUpdated": "2019-10-17T07:29:07.000Z",
+                "duration": 540,
+                "effectiveModifiedDate": "2019-10-17T07:29:07.000Z",
+                "effectivenessIndex": 0,
+                "enrollmentType": "Self Enroll",
+                "hasOptionalLoResources": false,
+                "imageUrl": "https://cpcontentsdev.adobe.com/protected/account/5586/thumbnails/courses/2010047/CaptureLP_f362ec866e1a4e01835736b825b3c486.png?cp_oauth_jwt=eyJhbGciOiJIUzI1NiJ9.eyJwIjoidXJsIiwicmFuZCI6IjZlNGRlZjk0LTYwZWItNGM4ZS05YjdlLWM4M2QwMGJhNzAwZCIsInYiOiIxIiwib3JpZ2luYWxVcmxIYXNoIjoiOGVmMjBhMTY4ZjY0ZDI3NzU5YjViMmFjYjUyYmI3YmQ4ZDA0MTE2NiIsImV4cCI6MTU3MTkwMjE1NCwicmlkIjoiMzI3MDkiLCJpYXQiOjE1NzEyOTczNTQsImNpZCI6IjEifQ.1CjZXFIfzN16oXZuivlb90Tk4nr3wQKWM4bANkRpVUI",
+                "isExternal": false,
+                "isPrerequisiteEnforced": true,
+                "isSubLoOrderEnforced": true,
+                "loType": "course",
+                "moduleResetEnabled": false,
+                "state": "Published",
+                "localizedMetadata": [
+                    {
+                        "description": "des",
+                        "locale": "en-US",
+                        "name": "CD_1",
+                        "overview": "des"
+                    },
+                    {
+                        "description": "BESSS",
+                        "locale": "fr-FR",
+                        "name": "DESSS",
+                        "overview": "mess"
+                    },
+                    {
+                        "description": "kess",
+                        "locale": "de-DE",
+                        "name": "NESS",
+                        "overview": "DESS"
+                    }
+                ]
+            },
+            "relationships": {
+                "authors": {
+                    "data": [
+                        {
+                            "id": "6507203",
+                            "type": "user"
+                        }
+                    ]
+                },
+                "instances": {
+                    "data": [
+                        {
+                            "id": "course:2010047_3688653",
+                            "type": "learningObjectInstance"
+                        }
+                    ]
+                },
+                "prerequisiteLOs": {
+                    "data": [
+                        {
+                            "id": "course:2010045",
+                            "type": "learningObject"
+                        }
+                    ]
+                },
+                "skills": {
+                    "data": [
+                        {
+                            "id": "course:2010047_42009",
+                            "type": "learningObjectSkill"
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "included": [
+        {
+            "id": "course:2010047_3688653",
+            "type": "learningObjectInstance",
+            "attributes": {
+                "completionDeadline": "2023-10-18T18:29:59.000Z",
+                "dateCreated": "2019-10-17T06:34:37.000Z",
+                "isDefault": true,
+                "isFlexible": false,
+                "state": "Active",
+                "localizedMetadata": [
+                    {
+                        "locale": "en-US",
+                        "name": "Default instance"
+                    }
+                ]
+            },
+            "relationships": {
+                "learningObject": {
+                    "data": {
+                        "id": "course:2010047",
+                        "type": "learningObject"
+                    }
+                },
+                "loResources": {
+                    "data": [
+                        {
+                            "id": "course:2010047_3688653_2646512_0",
+                            "type": "learningObjectResource"
+                        },
+                        {
+                            "id": "course:2010047_3688653_2646514_0",
+                            "type": "learningObjectResource"
+                        },
+                        {
+                            "id": "course:2010047_3688653_2646513_0",
+                            "type": "learningObjectResource"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "570956_1_en-US",
+            "type": "resource",
+            "attributes": {
+                "authorDesiredDuration": 360,
+                "contentType": "PDF",
+                "contentZipSize": 9863,
+                "contentZipUrl": "https://cpcontentsdev.adobe.com/protected/account/1/modules/42165/1/content/acpmcz1456557735.zip?cp_oauth_jwt=eyJhbGciOiJIUzI1NiJ9.eyJwIjoidXJsIiwicmFuZCI6IjE0MTVhYTEyLWUyZmEtNGM4ZS1iYzYwLTViOTJjOTBkODgwNiIsInYiOiIxIiwib3JpZ2luYWxVcmxIYXNoIjoiY2I4ODU2MTZiNzRiMjE5NDI2NDhiZTFiMWZlZDNmNjU0OWYwNDcwZCIsImV4cCI6MTU3MTkwMjE1NCwicmlkIjoiMzI3MDkiLCJpYXQiOjE1NzEyOTczNTQsImNpZCI6IjEifQ.aGuY0LjDqKfI4oBP01TmWe8Yc_rmoydY07BEoAAsgzU",
+                "dateCreated": "2019-10-17T06:31:00.000Z",
+                "desiredDuration": 360,
+                "hasQuiz": false,
+                "hasToc": false,
+                "isDefault": false,
+                "locale": "en-US",
+                "location": "https://cpcontentsdev.adobe.com/protected/account/1/modules/42165/1/content/assets/?cp_oauth_jwt=eyJhbGciOiJIUzI1NiJ9.eyJwIjoidXJsIiwicmFuZCI6Ijg0YTVhZjgzLTg2MmQtNDRjZi05OGFiLTAzNzE0MWQzN2RkZCIsInYiOiIxIiwib3JpZ2luYWxVcmxIYXNoIjoiOWZiNjI2MjQ2Yzc5OGUwZmZhZTdjNjNiOTA4ZjhhODJmY2VjM2Y5ZiIsImV4cCI6MTU3MTkwMjE1NCwicmlkIjoiMzI3MDkiLCJpYXQiOjE1NzEyOTczNTQsImNpZCI6IjEifQ.OLYPP8nZz9ze_tecoDJQDXf1sHwL0yTLp_g9koGOuq4",
+                "name": "Vijay IT Stage Test Module",
+                "onlyQuiz": false,
+                "reportingInfo": "{\"CCCriteria\":\"launch_content\",\"SCCriteria\":\"launch_content\",\"CCData\":{\"viewPercent\":\"0\",\"quizData\":\"\"},\"SCData\":{\"viewPercent\":\"0\",\"quizData\":\"\"}}",
+                "reportingType": "CAPI"
+            }
+        },
+        {
+            "id": "570956_1_de-DE",
+            "type": "resource",
+            "attributes": {
+                "authorDesiredDuration": 420,
+                "contentType": "PPT",
+                "contentZipSize": 61861,
+                "contentZipUrl": "https://cpcontentsdev.adobe.com/protected/account/5586/resources/776793/776793/content_a3d63f0d0ddb4e9983dd20869a4ba0cd.pdf?cp_oauth_jwt=eyJhbGciOiJIUzI1NiJ9.eyJwIjoidXJsIiwicmFuZCI6ImU2ODVkY2ZkLTg3YjEtNGVhYy1hZDhkLTkzMzdlYTZhMjRiMiIsInYiOiIxIiwib3JpZ2luYWxVcmxIYXNoIjoiYzc5YWRmN2Q4ZmQ2MThlMWVkYTc3MzdlMzI4NTU2YWZmODMyNTBkYSIsImV4cCI6MTU3MTkwMjE1NCwicmlkIjoiMzI3MDkiLCJpYXQiOjE1NzEyOTczNTQsImNpZCI6IjEifQ.fcHoZVvWHSUbfbwRHUQq63g-SQ4lWcwpwvzZN7UQ2IM",
+                "dateCreated": "2019-10-17T06:59:42.000Z",
+                "desiredDuration": 420,
+                "hasQuiz": false,
+                "hasToc": false,
+                "isDefault": false,
+                "locale": "de-DE",
+                "location": "https://cpcontentsdev.adobe.com/protected/account/5586/resources/776793/776793/content_a3d63f0d0ddb4e9983dd20869a4ba0cd.pdf?cp_oauth_jwt=eyJhbGciOiJIUzI1NiJ9.eyJwIjoidXJsIiwicmFuZCI6IjEyNDEzZTBiLWUwYzctNDk2ZC1iMzY1LWNmM2QzOGY5YmYxYyIsInYiOiIxIiwib3JpZ2luYWxVcmxIYXNoIjoiYzc5YWRmN2Q4ZmQ2MThlMWVkYTc3MzdlMzI4NTU2YWZmODMyNTBkYSIsImV4cCI6MTU3MTkwMjE1NCwicmlkIjoiMzI3MDkiLCJpYXQiOjE1NzEyOTczNTQsImNpZCI6IjEifQ.UP8rIEUfeqXBhK6xuu4tB09fwsx6-KD_c4ss6YiHScU",
+                "name": "Vijay IT Stage Test Module",
+                "onlyQuiz": false,
+                "reportingInfo": "{\"CCCriteria\":\"launch_content\",\"SCCriteria\":\"launch_content\",\"CCData\":{\"viewPercent\":\"0\",\"quizData\":\"\"},\"SCData\":{\"viewPercent\":\"0\",\"quizData\":\"\"}}",
+                "reportingType": "CAPI"
+            }
+        },
+        {
+            "id": "570954_2_en-US",
+            "type": "resource",
+            "attributes": {
+                "authorDesiredDuration": 60,
+                "contentStructureInfoUrl": "https://cpcontents.stage.adobe.com/protected/account/1/modules/1333/2/contentStructureInfo.json?cp_oauth_jwt=eyJhbGciOiJIUzI1NiJ9.eyJwIjoidXJsIiwicmFuZCI6IjE2NDYxODVlLTIyYWUtNGE1ZS04YWEyLTA1NGQ2YTQxM2MyYSIsInYiOiIxIiwib3JpZ2luYWxVcmxIYXNoIjoiNjIyNjkzNzQ4YTg2MjQ3N2IyZTQ2NzI4YzAxMDBkOTBhODQwODNjMiIsImV4cCI6MTU3MTkwMjE1NCwicmlkIjoiMzI3MDkiLCJpYXQiOjE1NzEyOTczNTQsImNpZCI6IjEifQ.zOnv5IlHVkddOFth0EB-W8zZiqYYjWnF-bL3K1axMxY",
+                "contentType": "CP",
+                "dateCreated": "2019-10-17T06:31:00.000Z",
+                "desiredDuration": 24,
+                "hasQuiz": true,
+                "hasToc": false,
+                "isDefault": false,
+                "locale": "en-US",
+                "location": "https://cpcontents.stage.adobe.com/protected/account/1/modules/1333/2/content/index.html?cp_oauth_jwt=eyJhbGciOiJIUzI1NiJ9.eyJwIjoidXJsIiwicmFuZCI6IjA1YzFjYzExLTY1MjAtNDFkOC04MjI1LThhMTY4OTRjNzBmMSIsInYiOiIxIiwib3JpZ2luYWxVcmxIYXNoIjoiNDQ0MWM3N2JjMzllYzAyMzIzZjE5MDA4MzJkNmIxZjY3OTg2NjBiMiIsImV4cCI6MTU3MTkwMjE1NCwicmlkIjoiMzI3MDkiLCJpYXQiOjE1NzEyOTczNTQsImNpZCI6IjEifQ.9VVgqPxoIZeIBD2eDrW1uNOTSUXg2nMIFS5AmbX4I5U",
+                "name": "How Well do you know Captivate and Presenter?",
+                "onlyQuiz": false,
+                "reportingInfo": "{\"CCCriteria\":\"viewPercent_or_quiz\",\"SCCriteria\":\"viewPercent_or_quiz\",\"CCData\":{\"viewPercent\":\"100\",\"quizData\":\"quiz_passed\"},\"SCData\":{\"viewPercent\":\"100\",\"quizData\":\"quiz_passed\"}}",
+                "reportingType": "CAPI"
+            }
+        },
+        {
+            "id": "570955_1_en-US",
+            "type": "resource",
+            "attributes": {
+                "authorDesiredDuration": 60,
+                "contentStructureInfoUrl": "https://cpcontents.stage.adobe.com/protected/account/1/modules/1335/1/contentStructureInfo.json?cp_oauth_jwt=eyJhbGciOiJIUzI1NiJ9.eyJwIjoidXJsIiwicmFuZCI6IjY0NDY0OGYzLTBkZDUtNDhhMy1hNzcxLTJjNjRlNDU1ZTc5MSIsInYiOiIxIiwib3JpZ2luYWxVcmxIYXNoIjoiYmViMzYxNTQ0ODk0ZGIzZTdiYmM0OWQ4MGFjZTUzYjc2MjQ2NmE1NyIsImV4cCI6MTU3MTkwMjE1NCwicmlkIjoiMzI3MDkiLCJpYXQiOjE1NzEyOTczNTQsImNpZCI6IjEifQ.rTDS_o1gojokiFSJApVmA9SU0zlzNG1Jmt0IxB0p2bE",
+                "contentType": "CP",
+                "dateCreated": "2019-10-17T06:31:00.000Z",
+                "desiredDuration": 21,
+                "hasQuiz": false,
+                "hasToc": false,
+                "isDefault": false,
+                "locale": "en-US",
+                "location": "https://cpcontents.stage.adobe.com/protected/account/1/modules/1335/1/content/index.html?cp_oauth_jwt=eyJhbGciOiJIUzI1NiJ9.eyJwIjoidXJsIiwicmFuZCI6ImIxYTE2NDc5LTk1Y2ItNGY0My1iYjZkLTVjM2JmNWNhNjdlMSIsInYiOiIxIiwib3JpZ2luYWxVcmxIYXNoIjoiNDAzNjg4NDg2NmI0ZGU4YWYxNzMxNWNkZmNhMzU3YjIzNjg4N2EzZiIsImV4cCI6MTU3MTkwMjE1NCwicmlkIjoiMzI3MDkiLCJpYXQiOjE1NzEyOTczNTQsImNpZCI6IjEifQ.aiU-Fv4ss2McmaZLXB8IFbY7lSHRpoGt8ivDNQOoy2Q",
+                "name": "Sales Training 101",
+                "onlyQuiz": false,
+                "reportingInfo": "{\"CCCriteria\":\"view_percent\",\"SCCriteria\":\"view_percent\",\"CCData\":{\"viewPercent\":\"50\",\"quizData\":\"\"},\"SCData\":{\"viewPercent\":\"50\",\"quizData\":\"\"}}",
+                "reportingType": "CAPI"
+            }
+        },
+        {
+            "id": "570956_1_fr-FR",
+            "type": "resource",
+            "attributes": {
+                "authorDesiredDuration": 480,
+                "contentType": "PDF",
+                "contentZipSize": 4402012,
+                "contentZipUrl": "https://cpcontentsdev.adobe.com/protected/account/5586/resources/776794/776794/content_91e753bae77945ffad702502fe8db091.pdf?cp_oauth_jwt=eyJhbGciOiJIUzI1NiJ9.eyJwIjoidXJsIiwicmFuZCI6IjE4Y2YzMWU2LThjZjQtNGI5Yi1hNTQxLWRhOWExNDJhZjA4NiIsInYiOiIxIiwib3JpZ2luYWxVcmxIYXNoIjoiNjZlZmU1M2IxZDRlMTI2NDBjOTIxOTcyNjg3NDM3YWE2MDdjNWFhNCIsImV4cCI6MTU3MTkwMjE1NCwicmlkIjoiMzI3MDkiLCJpYXQiOjE1NzEyOTczNTQsImNpZCI6IjEifQ.7iU-T652OgpOuLRXTcY19Rx0E-Y5ZLN60z5qk2ENvDY",
+                "dateCreated": "2019-10-17T06:59:42.000Z",
+                "desiredDuration": 480,
+                "hasQuiz": false,
+                "hasToc": false,
+                "isDefault": false,
+                "locale": "fr-FR",
+                "location": "https://cpcontentsdev.adobe.com/protected/account/5586/resources/776794/776794/content_91e753bae77945ffad702502fe8db091.pdf?cp_oauth_jwt=eyJhbGciOiJIUzI1NiJ9.eyJwIjoidXJsIiwicmFuZCI6IjI1M2U3Nzg1LTQ0MDQtNGFjYi1iNDI5LTQ0NGY4NThlMmJiNSIsInYiOiIxIiwib3JpZ2luYWxVcmxIYXNoIjoiNjZlZmU1M2IxZDRlMTI2NDBjOTIxOTcyNjg3NDM3YWE2MDdjNWFhNCIsImV4cCI6MTU3MTkwMjE1NCwicmlkIjoiMzI3MDkiLCJpYXQiOjE1NzEyOTczNTQsImNpZCI6IjEifQ.7tFXqePTERCHnJSh6NPzkHJTWp_LCheIqfefNR-93tY",
+                "name": "Vijay IT Stage Test Module",
+                "onlyQuiz": false,
+                "reportingInfo": "{\"CCCriteria\":\"launch_content\",\"SCCriteria\":\"launch_content\",\"CCData\":{\"viewPercent\":\"0\",\"quizData\":\"\"},\"SCData\":{\"viewPercent\":\"0\",\"quizData\":\"\"}}",
+                "reportingType": "CAPI"
+            }
+        },
+        {
+            "id": "course:2010047_3688653_2646512_0",
+            "type": "learningObjectResource",
+            "attributes": {
+                "externalReporting": false,
+                "loResourceType": "Pre Work",
+                "multipleAttemptEnabled": false,
+                "resourceType": "Elearning",
+                "submissionEnabled": false,
+                "version": 1,
+                "localizedMetadata": [
+                    {
+                        "description": "This module explores the various facets of Enterprise Sales. Take this module to gain insight into the sales process. ",
+                        "locale": "en-US",
+                        "name": "Sales Training 101"
+                    }
+                ],
+                "multipleAttempt": {
+                    "attemptDuration": 0,
+                    "attemptEndCriteria": "NONE",
+                    "infiniteAttempts": true,
+                    "maxAttemptCount": 0,
+                    "stopAttemptOnSuccessfulComplete": false,
+                    "timeBetweenAttempts": 0
+                }
+            },
+            "relationships": {
+                "learningObject": {
+                    "data": {
+                        "id": "course:2010047",
+                        "type": "learningObject"
+                    }
+                },
+                "loInstance": {
+                    "data": {
+                        "id": "course:2010047_3688653",
+                        "type": "learningObjectInstance"
+                    }
+                },
+                "resources": {
+                    "data": [
+                        {
+                            "id": "570955_1_en-US",
+                            "type": "resource"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "course:2010047_3688653_2646514_0",
+            "type": "learningObjectResource",
+            "attributes": {
+                "externalReporting": false,
+                "loResourceType": "Test Out",
+                "multipleAttemptEnabled": false,
+                "resourceType": "Elearning",
+                "submissionEnabled": false,
+                "version": 2,
+                "localizedMetadata": [
+                    {
+                        "description": "Captivate and Presenter are two e-Learning products offered by Adobe. Take this module to test your knowledge about these two products. ",
+                        "locale": "en-US",
+                        "name": "How Well do you know Captivate and Presenter?"
+                    }
+                ],
+                "multipleAttempt": {
+                    "attemptDuration": 0,
+                    "attemptEndCriteria": "NONE",
+                    "infiniteAttempts": true,
+                    "maxAttemptCount": 0,
+                    "stopAttemptOnSuccessfulComplete": false,
+                    "timeBetweenAttempts": 0
+                }
+            },
+            "relationships": {
+                "learningObject": {
+                    "data": {
+                        "id": "course:2010047",
+                        "type": "learningObject"
+                    }
+                },
+                "loInstance": {
+                    "data": {
+                        "id": "course:2010047_3688653",
+                        "type": "learningObjectInstance"
+                    }
+                },
+                "resources": {
+                    "data": [
+                        {
+                            "id": "570954_2_en-US",
+                            "type": "resource"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "course:2010047_3688653_2646513_0",
+            "type": "learningObjectResource",
+            "attributes": {
+                "externalReporting": false,
+                "loResourceType": "Content",
+                "multipleAttemptEnabled": false,
+                "resourceType": "Elearning",
+                "submissionEnabled": false,
+                "version": 1,
+                "localizedMetadata": [
+                    {
+                        "locale": "en-US",
+                        "name": "Vijay IT Stage Test Module"
+                    }
+                ]
+            },
+            "relationships": {
+                "learningObject": {
+                    "data": {
+                        "id": "course:2010047",
+                        "type": "learningObject"
+                    }
+                },
+                "loInstance": {
+                    "data": {
+                        "id": "course:2010047_3688653",
+                        "type": "learningObjectInstance"
+                    }
+                },
+                "resources": {
+                    "data": [
+                        {
+                            "id": "570956_1_en-US",
+                            "type": "resource"
+                        },
+                        {
+                            "id": "570956_1_fr-FR",
+                            "type": "resource"
+                        },
+                        {
+                            "id": "570956_1_de-DE",
+                            "type": "resource"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
